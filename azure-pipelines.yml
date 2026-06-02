@@ -18,4 +18,4 @@ steps:
 - script: npx playwright install --with-deps
   displayName: 'install Playwright Browsers'
 - script: npx playwright test
-  displayName: 'Run Playwright Tests'
+  displayName: 'Execute Playwright Tests'
