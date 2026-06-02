@@ -19,3 +19,9 @@ steps:
   displayName: 'install Playwright Browsers'
 - script: npx playwright test
   displayName: 'Execute Playwright Tests'
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: 'playwright-report'
+    artifact: 'Playwright HTML Report'
+    publishLocation: 'pipeline'
+  condition: always()
